@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="55dp"
+        android:id="@+id/layout"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/layout"
+        android:id="@+id/layout1"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="55dp"
+        android:id="@+id/layout2"></RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCIENCE"
+        android:textSize="20dp"
+        android:id="@+id/m1"
+        android:onClick="onHitScience"
+        android:clickable="true"
+        android:background="@drawable/shape2"
+        android:layout_alignBottom="@+id/layout2"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/layout2"
+        android:id="@+id/relativeLayout"></RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPUTER SCIENCE"
+        android:textSize="25dp"
+        android:id="@+id/bt2"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onHitComputerScience"
+        android:clickable="true"
+        android:background="@drawable/shape3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the quiz land."
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_above="@+id/layout1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO BACK"
+        android:id="@+id/bt3"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/bt2"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:onClick="onHitGoBack" />
+
+</RelativeLayout>
